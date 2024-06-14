@@ -9,9 +9,9 @@
 
 - [A. Data Source And Design](#a-data-source-and-design)
   - [I. API Detail](#i-api-detail)
-    - [1. sec-api.io](#1-sec-apiio)
-    - [2. Alpha Vantage API for market-status](#2-alpha-vantage-api-for-market-status)
-    - [3. Alpha Vantage API for news\_sentiment](#3-alpha-vantage-api-for-news_sentiment)
+    - [1. Alpha Vantage API for market-status](#1-alpha-vantage-api-for-market-status)
+    - [2. Alpha Vantage API for news\_sentiment](#22-alpha-vantage-api-for-news_sentiment)
+    - [3. sec-api.io](#1-sec-apiio)
     - [4. Polygon](#4-polygon)
   - [II. Data from JSON](#ii-Data-from-json)
     - [1. Extract](#1-extract)
@@ -24,40 +24,8 @@
 # A. Data Source And Design
 ## I. API Detail
 Đầu tiên chúng ta hãy cùng xem qua API được cung cấp là gì. 
-### 1. sec-api.io
-[sec-api.io](https://sec-api.io/docs/mapping-api/list-companies-by-exchange)
-- API này giúp chúng ta truy xuất danh sách các công ty hiện đang có mặt trên các thị trường chứng khoán Nyse, Nasdaq, Nysemkt và Bats
-- API này sẽ được extract mỗi tháng, mỗi khi extract là mất 4 lần (Nyse, Nasdaq, Nysemkt, Bats)
-- Dưới đây là các tham số API cần thiết để truy xuất danh sách các công ty có trên các thị trường chứng khoán NASDAQ, NYSE, NYSEMKT và NATS.
-    - **exchange_name**: Tên của thị trường chứng khoán cần trích xuất công ty.
-    - **api_key**: Khóa API để xác thực yêu cầu.
-- Chỉ lấy các dữ liệu thuộc công ty của 4 sàn chứng khoán Hoa Kỳ là NYSE, NASDAQ, NYSEMKT (AMEX), BATS
-- Mở rộng dự án tương lai:
-    - Thuộc tính isDelisted của các công ty có thể thay đổi → cập nhật giá trị của thuộc tính này cho công ty đó
-    - Có công ty mới được thêm vào sàn giao dịch → thêm công ty mới vào
-- Lưu ý: chỉ có 100 lần extract
 
-  
-**Dưới đây là mô tả cho mỗi thuộc tính trong tập tin JSON được API trả về:**
-  1. **name**: Tên công ty.
-  2. **ticker**: Ký hiệu duy nhất được sử dụng để nhận biết công ty trên sàn giao dịch chứng khoán.
-  3. **cik**: Mã CIK (Central Index Key) được cấp cho công ty bởi Ủy ban Chứng khoán và Giao dịch (SEC)..
-  4. **cusip**: Số CUSIP (Committee on Uniform Securities Identification Procedures), một định danh duy nhất cho chứng khoán.
-  5. **exchange**: Sàn giao dịch nơi cổ phiếu của công ty được giao dịch, như "NASDAQ".
-  6. **isDelisted**: Một giá trị boolean cho biết liệu cổ phiếu của công ty đã bị loại khỏi sàn giao dịch hay không.
-  7. **category**: Mô tả loại hoặc hạng mục của cổ phiếu của công ty, như "Cổ phiếu thường về nội địa" hoặc "Cổ phiếu thông thường ADR".
-  8. **sector**: Ngành của công ty, ví dụ như "Dịch vụ Tài chính" hoặc "Chăm sóc sức khỏe".
-  9. **industry**: Ngành cụ thể mà công ty hoạt động, như "Ngân hàng" hoặc "Công nghệ Sinh học".
-  10. **sic**: Mã phân loại ngành công nghiệp tiêu chuẩn (SIC), phân loại loại hình kinh doanh chính của công ty.
-  11. **sicSector**: Mô tả ngành dựa trên mã SIC, như "Tài chính Bảo hiểm Và Bất động sản" hoặc "Sản xuất".
-  12. **sicIndustry**: Xác định ngành dựa trên mã SIC, như "Ngân hàng Thương mại Nhà nước" hoặc "Các loại thuốc".
-  13. **famaSector**: Có thể liên quan đến các ngành mô hình Fama-French.
-  14. **famaIndustry**: Có thể liên quan đến các ngành mô hình Fama-French.
-  15. **currency**: Đơn vị tiền tệ mà cổ phiếu của công ty được giao dịch, như "USD" cho đô la Mỹ hoặc "EUR" cho euro.
-  16. **location**: Địa điểm của trụ sở công ty, như "Florida, Hoa Kỳ" hoặc "Pháp".
-  17. **id**: Một định danh duy nhất cho mục nhập công ty.
-
-### 2. Alpha Vantage API for market-status
+### 1. Alpha Vantage API for market-status
 [Alpha Vantage API](https://www.alphavantage.co/documentation/#market-status)
 - API này giúp chúng ta truy xuất danh sách các thị trường chứng khoán trên toàn thế giới
 - API này sẽ được extract mỗi tháng, nhưng có thể không cần thiết vì dữ liệu về thị trường và khu vực ít khi thay đổi
@@ -74,7 +42,7 @@
 - **local_close**: Thời gian đóng cửa địa phương của thị trường.
 - **current_status**: Tình trạng hiện tại của thị trường (bỏ qua)
 
-### 3. Alpha Vantage API for news_sentiment
+### 2. Alpha Vantage API for news_sentiment
 [Alpha Vantage API](https://www.alphavantage.co/documentation/#news-sentiment)
 - API này giúp chúng ta truy xuất dữ liệu tin tức về thị trường, cùng với dữ liệu sentiment từ một loạt các nguồn tin hàng đầu trên toàn thế giới.
 - API này sẽ được extract mỗi cuối ngày. Mỗi lần extract sẽ lấy tất cả các bài viết được xuất bản trong ngày tại thị trường Mỹ
@@ -127,6 +95,37 @@ Nguồn cung cấp tin tức hoặc phân tích thị trường, có thể là m
     | -------------------------- | ---------- | ------------------ | ---------------- | ---------------- | --------- |
     | Label                      | Bearish    | Somewhat-Bearish   | Neutral          | Somewhat_Bullish | Bullish   |
 - **Chỉ số liên quan (relevance_score_definition):** 0 < x <= 1, điểm số càng cao thì độ liên quan càng cao.
+
+### 3. sec-api.io
+[sec-api.io](https://sec-api.io/docs/mapping-api/list-companies-by-exchange)
+- API này giúp chúng ta truy xuất danh sách các công ty hiện đang có mặt trên các thị trường chứng khoán Nyse, Nasdaq, Nysemkt và Bats
+- API này sẽ được extract mỗi tháng, mỗi khi extract là mất 4 lần (Nyse, Nasdaq, Nysemkt, Bats)
+- Dưới đây là các tham số API cần thiết để truy xuất danh sách các công ty có trên các thị trường chứng khoán NASDAQ, NYSE, NYSEMKT và NATS.
+    - **exchange_name**: Tên của thị trường chứng khoán cần trích xuất công ty.
+    - **api_key**: Khóa API để xác thực yêu cầu.
+- Chỉ lấy các dữ liệu thuộc công ty của 4 sàn chứng khoán Hoa Kỳ là NYSE, NASDAQ, NYSEMKT (AMEX), BATS
+- Mở rộng dự án tương lai:
+    - Thuộc tính isDelisted của các công ty có thể thay đổi → cập nhật giá trị của thuộc tính này cho công ty đó
+    - Có công ty mới được thêm vào sàn giao dịch → thêm công ty mới vào
+- Lưu ý: chỉ có 100 lần extract
+**Dưới đây là mô tả cho mỗi thuộc tính trong tập tin JSON được API trả về:**
+  1. **name**: Tên công ty.
+  2. **ticker**: Ký hiệu duy nhất được sử dụng để nhận biết công ty trên sàn giao dịch chứng khoán.
+  3. **cik**: Mã CIK (Central Index Key) được cấp cho công ty bởi Ủy ban Chứng khoán và Giao dịch (SEC)..
+  4. **cusip**: Số CUSIP (Committee on Uniform Securities Identification Procedures), một định danh duy nhất cho chứng khoán.
+  5. **exchange**: Sàn giao dịch nơi cổ phiếu của công ty được giao dịch, như "NASDAQ".
+  6. **isDelisted**: Một giá trị boolean cho biết liệu cổ phiếu của công ty đã bị loại khỏi sàn giao dịch hay không.
+  7. **category**: Mô tả loại hoặc hạng mục của cổ phiếu của công ty, như "Cổ phiếu thường về nội địa" hoặc "Cổ phiếu thông thường ADR".
+  8. **sector**: Ngành của công ty, ví dụ như "Dịch vụ Tài chính" hoặc "Chăm sóc sức khỏe".
+  9. **industry**: Ngành cụ thể mà công ty hoạt động, như "Ngân hàng" hoặc "Công nghệ Sinh học".
+  10. **sic**: Mã phân loại ngành công nghiệp tiêu chuẩn (SIC), phân loại loại hình kinh doanh chính của công ty.
+  11. **sicSector**: Mô tả ngành dựa trên mã SIC, như "Tài chính Bảo hiểm Và Bất động sản" hoặc "Sản xuất".
+  12. **sicIndustry**: Xác định ngành dựa trên mã SIC, như "Ngân hàng Thương mại Nhà nước" hoặc "Các loại thuốc".
+  13. **famaSector**: Có thể liên quan đến các ngành mô hình Fama-French.
+  14. **famaIndustry**: Có thể liên quan đến các ngành mô hình Fama-French.
+  15. **currency**: Đơn vị tiền tệ mà cổ phiếu của công ty được giao dịch, như "USD" cho đô la Mỹ hoặc "EUR" cho euro.
+  16. **location**: Địa điểm của trụ sở công ty, như "Florida, Hoa Kỳ" hoặc "Pháp".
+  17. **id**: Một định danh duy nhất cho mục nhập công ty.
 
 ### 4. Polygon
 [Polygon](https://polygon.io/docs/stocks/get_v2_aggs_ticker__stocksticker__range__multiplier___timespan___from___to)
