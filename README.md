@@ -1,4 +1,4 @@
-<h1>Hello Guys, Welcome to My First DE Project</h1>
+<h1>Hello Guys, Welcome to My DE Project</h1>
 In this project I will create an extraction, storage and BI system for stock data. The project will focus on the US stock market, I will expand other markets later, I hope you will accompany me.
 
 - [A. Data Source And Design](#a-data-source-and-design)
