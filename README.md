@@ -1,6 +1,6 @@
 <h1>Welcome to My DE Project</h1>
-  - In this project I am performing and ETL process and initialize storage solution for stock data
-  - The project on the data source of US stock market.
+  - [In this project I am performing and ETL process and initialize storage solution for stock data]
+  - [The project on the data source of US stock market].
 
 - [A. Data Source And Design](#a-data-source-and-design)
   - [I. ETL Architecture](#v-etl-architecture)
