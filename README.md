@@ -29,13 +29,13 @@ Các APIs cung cấp các data gì?
 - Dưới đây là các tham số API cần thiết để truy xuất danh sách các công ty có trên các thị trường chứng khoán NASDAQ, NYSE, NYSEMKT và NATS.
     - **exchange_name**: Tên của thị trường chứng khoán cần trích xuất công ty.
     - **api_key**: Khóa API để xác thực yêu cầu.
-- Chỉ lấy các công ty của 4 sàn chứng khoán Hoa Kỳ là NYSE, NASDAQ, NYSEMKT (AMEX), BATS
-- Dự kiến trong tương lai:
+- Chỉ lấy các dữ liệu thuộc công ty của 4 sàn chứng khoán Hoa Kỳ là NYSE, NASDAQ, NYSEMKT (AMEX), BATS
+- Mở rộng dự án trong tương lai:
     - Thuộc tính isDelisted của các công ty có thể thay đổi → cập nhật giá trị của thuộc tính này cho công ty đó
     - Có công ty mới được thêm vào sàn giao dịch → thêm công ty mới vào
 - Lưu ý: chỉ có 100 lần extract
   
-**Đây là mô tả cho mỗi thuộc tính trong tập tin JSON được API trả về:**
+**Các thuộc tính trong tập tin JSON được API trả về:**
   1. **name**: Tên công ty.
   2. **ticker**: Ký hiệu duy nhất được sử dụng để nhận biết công ty trên sàn giao dịch chứng khoán.
   3. **cik**: Mã CIK (Central Index Key) được cấp cho công ty bởi Ủy ban Chứng khoán và Giao dịch (SEC).
@@ -63,10 +63,10 @@ Các APIs cung cấp các data gì?
 <img src="img\ERD.png" alt="ERD">
 
 ## V. Star Schema
-- Business Requirement #1
-    Tạo Data Mart từ CSDL để theo dõi giá bán cũng như khối lượng cổ phiểu được giao dịch sau mỗi ngày giao dịch. 
-- Business Requirement #2
-    Tạo Data Mart từ CSDL để theo dõi các chuyên gia nói gì về từng cổ phiếu sau mỗi ngày giao dịch. 
+- Business Requirement #1.
+    - Tạo Data Mart từ CSDL để theo dõi giá bán cũng như khối lượng cổ phiểu được giao dịch sau mỗi ngày giao dịch. 
+- Business Requirement #2.
+    - Tạo Data Mart từ CSDL để theo dõi các chuyên gia nói gì về từng cổ phiếu sau mỗi ngày giao dịch. 
 
 <img src="img\starschema.png" alt="starschema">
 
