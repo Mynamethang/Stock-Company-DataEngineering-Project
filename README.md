@@ -3,7 +3,7 @@
 - **_In this project I perform an ETL process and a initialize suitable storage and a BI system for stock data._** 
 - **_The data in this project is extracted from data source of the US stock market._**
 - **_I use various of tools including big data tools_**
-- **_Interage the automation workflow in this project_**
+- **_Integrate the automation workflow in this project_**
 
 <h1>Detail of the Project</h1>
 
