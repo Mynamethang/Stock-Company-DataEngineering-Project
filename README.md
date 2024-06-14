@@ -17,6 +17,7 @@
     [III. ETL Architecture](#v-etl-architecture)
   - [IV. ERD](#iii-erd)
   - [V. Star Schema](#iv-star-schema)
+-[B. Implement a data workflow and essential tools for the process]
 
 
 # A. Data Source And Design
