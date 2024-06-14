@@ -2,21 +2,24 @@
 In this project I will create an extraction, storage and BI system for stock data. The project will focus on the US stock market, I will expand other markets later, I hope you will accompany me.
 
 - [A. Data Source And Design](#a-data-source-and-design)
-  - [I. API Detail](#i-api-detail)
+  - [I. ETL Architecture](#v-etl-architecture)
+  - [II. API Detail](#i-api-detail)
     - [1. sec-api.io](#1-sec-apiio)
     - [2. Alpha Vantage API for market-status](#2-alpha-vantage-api-for-market-status)
     - [3. Alpha Vantage API for news\_sentiment](#3-alpha-vantage-api-for-news_sentiment)
     - [4. Polygon](#4-polygon)
-  - [II. Extract from JSON](#ii-extract-from-json)
+  - [III. Extract from JSON](#ii-extract-from-json)
     - [1. Extract](#1-extract)
     - [2. Estimate](#2-estimate)
-  - [III. ERD](#iii-erd)
-  - [IV. Star Schema](#iv-star-schema)
-  - [V. ETL Architecture](#v-etl-architecture)
+  - [IV. ERD](#iii-erd)
+  - [V. Star Schema](#iv-star-schema)
 
 
 # A. Data Source And Design
-## I. API Detail
+## I. ETL Architecture
+<img src="img\ETL.png" alt="ETL">
+
+## II. API Detail
 Đầu tiên chúng ta hãy cùng xem qua API được cung cấp là gì. 
 ### 1. sec-api.io
 [sec-api.io](https://sec-api.io/docs/mapping-api/list-companies-by-exchange)
@@ -117,31 +120,7 @@ Nguồn cung cấp tin tức hoặc phân tích thị trường, có thể là m
     - **ticker_sentiment_label**: Nhãn mô tả cảm xúc của bài báo cho cổ phiếu đó.
 - **Chỉ số cảm xúc (sentiment_score_definition):**
     | sentiment_score_definition | x <= -0.35 | -0.35 < x <= -0.15 | -0.15 < x < 0.15 | 0.15 <= x < 0.35 | x >= 0.35 |
-    | -------------------------- | ---------- | ------------------ | ---------------- | ---------------- | --------- |
-    | Label                      | Bearish    | Somewhat-Bearish   | Neutral          | Somewhat_Bullish | Bullish   |
-- **Chỉ số liên quan (relevance_score_definition):** 0 < x <= 1, điểm số càng cao thì độ liên quan càng cao.
-
-### 4. Polygon
-[Polygon](https://polygon.io/docs/stocks/get_v2_aggs_ticker__stocksticker__range__multiplier___timespan___from___to)
-- API này giúp chúng ta truy xuất giá mở cửa, cao nhất, thấp nhất và đóng cửa hàng ngày (OHLC) cho toàn bộ thị trường chứng khoán tại Mỹ.
-- API này sẽ được extract mỗi đầu ngày, vì dữ liệu ngày hôm nay ngày mai mới có thể truy cập (hạn chế của việc sử dụng free)
-    - Mỗi lần extract sẽ lấy chỉ số của tất cả các cổ phiếu hiện đang giao dịch tại thị trường Mỹ
-    - Giới hạn gọi 5 API trong 1 phút
-- Đây là các tham số API cần thiết để truy xuất dữ liệu:
-    - **date**: Ngày bắt đầu cho khoảng thời gian tổng hợp.
-    - **adjusted**: Tuỳ chọn, mặc định là "true". Đặt "adjusted=false" để truy vấn dữ liệu gốc (chưa điều chỉnh). Adjusted có nghĩa là giá của cổ phiếu đã được điều chỉnh dựa trên các hoạt động chia cổ tức . **`<sử dụng cả true và false> ⇒ 2 bảng giá của cổ phiếu`**
-    - apikey: Khóa API để xác thực yêu cầu.
-
-**File JSON trả về (Frequently Insert)**
-**Thông tin này là về dữ liệu giao dịch của cổ phiếu sau 1 ngày. Dưới đây là mô tả của các thuộc tính trong JSON:**
-- **T**: Mã cổ phiếu.
-- **o**: Giá mở cửa.
-- **h**: Giá cao nhất.
-- **l**: Giá thấp nhất.
-- **c**: Giá đóng cửa.
-- **v**: Khối lượng giao dịch.
-
-## II. Extract from JSON
+    | -------------------------- | ---------- | --III. Extract from JSON
 ### 1. Extract 
 Dữ liệu lấy được từ Data Source ta tiến hành xử lý các file JSON và Insert vào các bảng có trong Data Staging.
 Từ các file JSON trên ta trích xuất ra các bảng thông tin:
@@ -235,11 +214,11 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
         - Alpha Vantage Inc. là nhà cung cấp hàng đầu các API có thể truy cập cho dữ liệu thị trường tài chính bao gồm cổ phiếu, FX và tiền tệ kỹ thuật số/tiền điện tử.
         - Polygon.io là một công ty cung cấp dữ liệu và API cho thị trường tài chính được thành lập vào năm 2017 hợp tác với một số tổ chức uy tín trong ngành tài chính, bao gồm Google, Microsoft, Goldman Sachs và Morgan Stanley.
         - 
-## III. ERD
+## IV. ERD
 - Cấu trúc CSDL của data staging được extract vào trước khi xử lý data để đưa vào Data Warehouse
 <img src="img\ERD.png" alt="ERD">
 
-## IV. Star Schema
+## V. Star Schema
 - Business Requirement #1
     Tạo Data Mart từ CSDL để theo dõi giá bán cũng như khối lượng cổ phiểu được giao dịch sau mỗi ngày giao dịch. 
 - Business Requirement #2
@@ -247,5 +226,3 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
 
 <img src="img\starschema.png" alt="starschema">
 
-## V. ETL Architecture
-<img src="img\ETL.png" alt="ETL">
