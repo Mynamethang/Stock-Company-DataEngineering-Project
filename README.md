@@ -198,9 +198,12 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
     - ticker_sentiment_label: Nhãn mô tả cảm xúc của cổ phiếu đó.
 
 ### 2. Estimate 
-Để ước tính lượng dữ liệu được đưa vào hệ thống theo 4Vs của big data, chúng ta sẽ xem xét các thông tin về số lượng dòng dữ liệu, số lượng bài báo và tần suất cập nhật để tính toán.
+Ta sẽ phân tích và ước tính lượng dữ liệu được đưa vào hệ thống theo 4Vs của big data, chúng ta sẽ xem xét các thông tin về số lượng dòng dữ liệu, số lượng bài báo và tần suất cập nhật để tính toán.
 
-- **Volume (Khối lượng)**:
+- **__Velocity (Tốc độ của dữ liệu)__**:
+    - **Giao dịch cổ phiếu:**: Dữ liệu được sinh ra cực kì nhanh trên mỗi giây, hàng triệu giao dịch cổ phiếu được thực hiện trên các sàn giao dịch toàn cầu. Dữ liệu giao dịch này cần được thu thập và xử lý trong thời gian thực để cung cấp cho các nhà đầu tư thông tin cập nhật về giá cả và khối lượng giao dịch.
+    - **Tin tức và dữ liệu tài chính:** Các nguồn tin tức và dữ liệu tài chính liên tục tạo ra một lượng lớn dữ liệu mới, bao gồm bài báo, báo cáo, phân tích và ý kiến. Dữ liệu này cần được xử lý và phân tích nhanh chóng để giúp các nhà đầu tư đưa ra quyết định sáng suốt.
+- **__Volume (Khối lượng của dữ liệu)__**:
     
     Để ước tính dung lượng cho khối lượng dữ liệu được mô tả, ta cần xem xét các yếu tố sau:
     
@@ -223,16 +226,13 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
             - Mỗi bài báo liên quan tới 3 cổ phiếu chứng khoán: 0.5 KB
             - Số lượng bài báo mỗi ngày: 1000
             - Dung lượng lưu trữ cần thiết: 1.5 KB/bài báo * 10000 bài báo/ngày ≈ 15000 KB
-        - **Tổng dung lượng lưu trữ cần thiết trong một ngày là: 16040 KB ~ 15.66 MB**
-        - **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 469.92 MB**
-        - **Tổng dung lượng lưu trữ cần thiết trong một năm là: 5,639.06 MB ~ 5.5 GB**
-- **Velocity (Tốc độ)**:
-    - **Giao dịch cổ phiếu:** Mỗi giây, hàng triệu giao dịch cổ phiếu được thực hiện trên các sàn giao dịch toàn cầu. Dữ liệu giao dịch này cần được thu thập và xử lý trong thời gian thực để cung cấp cho các nhà đầu tư thông tin cập nhật về giá cả và khối lượng giao dịch.
-    - **Tin tức và dữ liệu tài chính:** Các nguồn tin tức và dữ liệu tài chính liên tục tạo ra một lượng lớn dữ liệu mới, bao gồm bài báo, báo cáo, phân tích và ý kiến. Dữ liệu này cần được xử lý và phân tích nhanh chóng để giúp các nhà đầu tư đưa ra quyết định sáng suốt.
-- **Variety (Đa dạng)**:
+        => **Tổng dung lượng lưu trữ cần thiết trong một ngày là: 16040 KB ~ 15.66 MB**
+        => **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 469.92 MB**
+        => **Tổng dung lượng lưu trữ cần thiết trong một năm là: 5,639.06 MB ~ 5.5 GB**
+- **__Variety (Đa dạng của dữ liệu)__**:
     - **Dữ liệu giá cả:** Giá cổ phiếu theo thời gian thực và lịch sử, khối lượng giao dịch, giá mở, cao, thấp, đóng cửa, biến động giá
     - **Dữ liệu thị trường:** Chỉ số thị trường (VNIndex, VIX, v.v.), Tin tức và thông báo công ty, Báo cáo tài chính và phân tích, Thông tin về thị trường, Các bài báo với nhiều chủ đề.
-- **Veracity (Tính chính xác)**:
+- **__Veracity (Tính chính xác của dữ liệu)__**:
     - Nguồn dữ liệu được lấy từ các tổ chức uy tín như:
         - **SEC EDGAR** là viết tắt của **Electronic Data Gathering, Analysis, and Retrieval**, là một hệ thống điện tử được Ủy ban Chứng khoán và Giao dịch Hoa Kỳ (SEC) sử dụng để thu thập, phân tích và truy xuất các tài liệu được nộp bởi các công ty đại chúng và các tổ chức khác.
         - Alpha Vantage Inc. là nhà cung cấp hàng đầu các API có thể truy cập cho dữ liệu thị trường tài chính bao gồm cổ phiếu, FX và tiền tệ kỹ thuật số/tiền điện tử.
