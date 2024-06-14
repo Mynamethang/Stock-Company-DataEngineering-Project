@@ -14,7 +14,7 @@
   - [II. Extract from JSON](#ii-extract-from-json)
     - [1. Extract](#1-extract)
     - [2. Estimate](#2-estimate)
-    [III. ETL Architecture](#v-etl-architecture)
+  - [III. ETL Architecture](#v-etl-architecture)
   - [IV. ERD](#iii-erd)
   - [V. Star Schema](#iv-star-schema)
 - [B. Implement a data workflow and essential tools for the process](#b-data-workflow)
