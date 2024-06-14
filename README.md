@@ -109,6 +109,7 @@ Nguồn cung cấp tin tức hoặc phân tích thị trường, có thể là m
     - Có công ty mới được thêm vào sàn giao dịch → thêm công ty mới vào
 - Lưu ý: chỉ có 100 lần extract
 **Dưới đây là mô tả cho mỗi thuộc tính trong tập tin JSON được API trả về:**
+  
   1. **name**: Tên công ty.
   2. **ticker**: Ký hiệu duy nhất được sử dụng để nhận biết công ty trên sàn giao dịch chứng khoán.
   3. **cik**: Mã CIK (Central Index Key) được cấp cho công ty bởi Ủy ban Chứng khoán và Giao dịch (SEC)..
