@@ -9,7 +9,7 @@
     - [2. Alpha Vantage API for market-status](#2-alpha-vantage-api-for-market-status)
     - [3. Alpha Vantage API for news\_sentiment](#3-alpha-vantage-api-for-news_sentiment)
     - [4. Polygon](#4-polygon)
-  - [II. Data from JSON](#ii-extract-from-json)
+  - [II. Data from JSON](#ii-Data-from-json)
     - [1. Extract](#1-extract)
     - [2. Estimate](#2-estimate)
     [III. ETL Architecture](#v-etl-architecture)
@@ -144,7 +144,7 @@ Nguồn cung cấp tin tức hoặc phân tích thị trường, có thể là m
 - **c**: Giá đóng cửa.
 - **v**: Khối lượng giao dịch.
 
-## II. Extract from JSON
+## II. Data from JSON
 ### 1. Extract 
 Dữ liệu lấy được từ Data Source ta tiến hành xử lý các file JSON và Insert vào các bảng có trong Data Staging.
 Từ các file JSON trên ta trích xuất ra các bảng thông tin:
@@ -198,7 +198,7 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
     - ticker_sentiment_label: Nhãn mô tả cảm xúc của cổ phiếu đó.
 
 ### 2. Estimate 
-Ta sẽ phân tích và ước tính lượng dữ liệu được đưa vào hệ thống theo 4Vs của big data, chúng ta sẽ xem xét các thông tin về số lượng dòng dữ liệu, số lượng bài báo và tần suất cập nhật để tính toán.
+Ta sẽ phân tích và ước tính lượng dữ liệu dựa trên 4Vs của big data.
 
 1. **_Velocity (Tốc độ của dữ liệu)_**:
     - **Giao dịch cổ phiếu:**: Dữ liệu được sinh ra cực kì nhanh trên mỗi giây, hàng triệu giao dịch cổ phiếu được thực hiện trên các sàn giao dịch toàn cầu. Dữ liệu giao dịch này cần được thu thập và xử lý trong thời gian thực để cung cấp cho các nhà đầu tư thông tin cập nhật về giá cả và khối lượng giao dịch.
