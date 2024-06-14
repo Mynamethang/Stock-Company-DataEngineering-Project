@@ -1,10 +1,11 @@
-<h1>My Data Engieering Project</h1>
+<h1>Introducing My Data Engieering Project</h1>
 
 - **_In this project I perform an ETL process and a initialize suitable storage and a BI system for stock data._** 
 - **_The data in this project is extracted from data source of the US stock market._**
 - **_I use various of tools including big data tools_**
 - **_Interage the automation workflow in this project_**
 
+<h2>Detail of the Project</h2>
 
 - [A. Data Source And Design](#a-data-source-and-design)
   - [I. API Detail](#i-api-detail)
