@@ -17,7 +17,6 @@
   - [V. Star Schema](#v-star-schema)
 
 
-# A. Data Source And Design
 ## I. ETL Architecture
 <img src="img\ETL.png" alt="ETL">
 
