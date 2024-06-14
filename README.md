@@ -237,7 +237,7 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
         - 
 ## III. ERD
 - Cấu trúc CSDL của data staging được extract vào trước khi xử lý data để đưa vào Data Warehouse
-<img src="images\ERD.png" alt="ERD">
+<img src="img\ERD.png" alt="ERD">
 
 ## IV. Star Schema
 - Business Requirement #1
@@ -245,7 +245,7 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
 - Business Requirement #2
     Tạo Data Mart từ CSDL để theo dõi các chuyên gia nói gì về từng cổ phiếu sau mỗi ngày giao dịch. 
 
-<img src="images\starschema.png" alt="starschema">
+<img src="img\starschema.png" alt="starschema">
 
 ## V. ETL Architecture
-<img src="images\ETL.png" alt="ETL">
+<img src="img\ETL.png" alt="ETL">
