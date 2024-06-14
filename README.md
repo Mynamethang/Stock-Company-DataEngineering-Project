@@ -108,6 +108,8 @@ Nguồn cung cấp tin tức hoặc phân tích thị trường, có thể là m
     - Thuộc tính isDelisted của các công ty có thể thay đổi → cập nhật giá trị của thuộc tính này cho công ty đó
     - Có công ty mới được thêm vào sàn giao dịch → thêm công ty mới vào
 - Lưu ý: chỉ có 100 lần extract
+
+
 **Dưới đây là mô tả cho mỗi thuộc tính trong tập tin JSON được API trả về:**
   
   1. **name**: Tên công ty.
