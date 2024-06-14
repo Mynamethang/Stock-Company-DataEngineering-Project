@@ -9,7 +9,7 @@
     - [2. Alpha Vantage API for market-status](#2-alpha-vantage-api-for-market-status)
     - [3. Alpha Vantage API for news\_sentiment](#3-alpha-vantage-api-for-news_sentiment)
     - [4. Polygon](#4-polygon)
-  - [II. Extract from JSON](#ii-extract-from-json)
+  - [II. Data from JSON](#ii-extract-from-json)
     - [1. Extract](#1-extract)
     - [2. Estimate](#2-estimate)
     [III. ETL Architecture](#v-etl-architecture)
@@ -200,10 +200,10 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
 ### 2. Estimate 
 Ta sẽ phân tích và ước tính lượng dữ liệu được đưa vào hệ thống theo 4Vs của big data, chúng ta sẽ xem xét các thông tin về số lượng dòng dữ liệu, số lượng bài báo và tần suất cập nhật để tính toán.
 
-- **_Velocity (Tốc độ của dữ liệu)_**:
+1. **_Velocity (Tốc độ của dữ liệu)_**:
     - **Giao dịch cổ phiếu:**: Dữ liệu được sinh ra cực kì nhanh trên mỗi giây, hàng triệu giao dịch cổ phiếu được thực hiện trên các sàn giao dịch toàn cầu. Dữ liệu giao dịch này cần được thu thập và xử lý trong thời gian thực để cung cấp cho các nhà đầu tư thông tin cập nhật về giá cả và khối lượng giao dịch.
     - **Tin tức và dữ liệu tài chính:** Các nguồn tin tức và dữ liệu tài chính liên tục tạo ra một lượng lớn dữ liệu mới, bao gồm bài báo, báo cáo, phân tích và ý kiến. Dữ liệu này cần được xử lý và phân tích nhanh chóng để giúp các nhà đầu tư đưa ra quyết định sáng suốt.
-- **_Volume (Khối lượng của dữ liệu)_**:
+2. **_Volume (Khối lượng của dữ liệu)_**:
     
     Để ước tính dung lượng cho khối lượng dữ liệu được mô tả, ta cần xem xét các yếu tố sau:
     
@@ -229,10 +229,10 @@ Ta sẽ phân tích và ước tính lượng dữ liệu được đưa vào h�
         => **Tổng dung lượng lưu trữ cần thiết trong một ngày là: 16040 KB ~ 15.66 MB**
         => **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 469.92 MB**
         => **Tổng dung lượng lưu trữ cần thiết trong một năm là: 5,639.06 MB ~ 5.5 GB**
-- **_Variety (Đa dạng của dữ liệu)_**:
+3. **_Variety (Đa dạng của dữ liệu)_**:
     - **Dữ liệu giá cả:** Giá cổ phiếu theo thời gian thực và lịch sử, khối lượng giao dịch, giá mở, cao, thấp, đóng cửa, biến động giá
     - **Dữ liệu thị trường:** Chỉ số thị trường (VNIndex, VIX, v.v.), Tin tức và thông báo công ty, Báo cáo tài chính và phân tích, Thông tin về thị trường, Các bài báo với nhiều chủ đề.
-- **_Veracity (Tính chính xác của dữ liệu)_**:
+4. **_Veracity (Tính chính xác của dữ liệu)_**:
     - Nguồn dữ liệu được lấy từ các tổ chức uy tín như:
         - **SEC EDGAR(Electronic Data Gathering, Analysis, and Retrieval)**: là một hệ thống điện tử được Ủy ban Chứng khoán và Giao dịch Hoa Kỳ (SEC) sử dụng để thu thập, phân tích và truy xuất các tài liệu được nộp bởi các công ty đại chúng và các tổ chức khác.
         - **Alpha Vantage Inc.**: là nhà cung cấp hàng đầu các API có thể truy cập cho dữ liệu thị trường tài chính bao gồm cổ phiếu, FX và tiền tệ kỹ thuật số/tiền điện tử.
