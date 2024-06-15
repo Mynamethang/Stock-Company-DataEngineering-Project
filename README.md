@@ -27,7 +27,8 @@
 
 # A. Data Source And Design
 ## I. API Detail
-Đầu tiên chúng ta hãy cùng xem qua API được cung cấp là gì. 
+
+Những dữ liệu mà các API cung cấp. 
 
 ### 1. Alpha Vantage API for market-status
 [Alpha Vantage API](https://www.alphavantage.co/documentation/#market-status)
