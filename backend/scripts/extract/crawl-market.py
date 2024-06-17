@@ -16,7 +16,7 @@ json_object = json.dumps(data, indent=4)
 
 # Get the current date for filename
 date = datetime.date.today().strftime("%Y_%m_%d")
-path = f"/home/anhcu/Project/Stock_project/backend/data/raw/markets/crawl_markets_{date}.json"
+path = f"/home/ngocthang/Project/Stock_project/backend/data/raw/markets/crawl_markets_{date}.json"
 
 # Write the JSON data to a file
 with open(path, "w") as outfile:
