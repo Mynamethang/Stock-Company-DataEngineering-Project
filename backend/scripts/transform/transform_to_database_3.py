@@ -70,7 +70,7 @@ if __name__ == "__main__":
     engine = create_engine(f"{DATABASE_TYPE}://{USER}:{PASSWORD}@{ENDPOINT}:{PORT}/{DATABASE}")
 
     # Read the latest companies JSON file
-    companies_json = read_latest_file_in_directory('/home/anhcu/Project/Stock_project/backend/data/raw/companies')
+    companies_json = read_latest_file_in_directory('/home/ngocthang/Project/Stock_project/backend/data/raw/companies')
     date = datetime.date.today().strftime("%Y_%m_%d")
 
     # Create a DataFrame for companies
@@ -148,5 +148,5 @@ if __name__ == "__main__":
     companies.rename(columns=new_columns, inplace=True)
 
     # Save the final companies DataFrame to a JSON file
-    path = f"/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_companies/process_companies_{date}.json"
+    path = f"/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_companies/process_companies_{date}.json"
     save_to_json(companies, path)
