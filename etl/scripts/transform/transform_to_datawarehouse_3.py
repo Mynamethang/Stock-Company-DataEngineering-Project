@@ -13,7 +13,7 @@ def process(parquet_file_path):
         .getOrCreate()
 
     # Connect to DuckDB
-    database_path = '/home/anhcu/Project/Stock_project/datawarehouse.duckdb'
+    database_path = '/home/ngocthang/Project/Stock_project/datawarehouse.duckdb'
     conn = duckdb.connect(database=database_path)
     
     # Read Parquet file into Spark DataFrame
