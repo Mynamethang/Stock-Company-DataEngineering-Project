@@ -58,8 +58,8 @@ def save_to_json(dataframe, filename):
 
 if __name__ == "__main__":
     # Read latest companies and markets data
-    companies = read_latest_file_in_directory('/home/anhcu/Project/Stock_project/backend/data/raw/companies')
-    markets = read_latest_file_in_directory('/home/anhcu/Project/Stock_project/backend/data/raw/markets')
+    companies = read_latest_file_in_directory('/home/ngocthang/Project/Stock_project/backend/data/raw/companies')
+    markets = read_latest_file_in_directory('/home/ngocthang/Project/Stock_project/backend/data/raw/markets')
     
     # Get the current date for filenames
     date = datetime.date.today().strftime("%Y_%m_%d")
@@ -73,7 +73,7 @@ if __name__ == "__main__":
         }
         for item in markets
     ]))
-    regions_path = f"/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_regions/process_regions_{date}.json"
+    regions_path = f"/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_regions/process_regions_{date}.json"
     save_to_json(regions, regions_path)
 
     # Transform and save industries data
@@ -84,7 +84,7 @@ if __name__ == "__main__":
         }
         for item in companies
     ]))
-    industries_path = f"/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_industries/process_industries_{date}.json"
+    industries_path = f"/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_industries/process_industries_{date}.json"
     save_to_json(industries, industries_path)
 
     # Transform and save SIC industries data
@@ -96,5 +96,5 @@ if __name__ == "__main__":
         }
         for item in companies
     ]))
-    sicindustries_path = f"/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_sicindustries/process_sicindustries_{date}.json"
+    sicindustries_path = f"/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_sicindustries/process_sicindustries_{date}.json"
     save_to_json(sicindustries, sicindustries_path)
