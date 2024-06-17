@@ -11,8 +11,8 @@
 latest_files=""
 
 # Directory paths
-local_directory=/home/anhcu/Project/Stock_project/elt/data/completed/load_db_to_dl
-hdfs_directory=/user/anhcu/datalake/companies
+local_directory=/home/ngocthang/Project/Stock_project/elt/data/completed/load_db_to_dl
+hdfs_directory=/user/ngocthang/datalake/companies
 # hdfs_directory="${directories[$local_directory]}"
 
 # Find the latest Parquet file
@@ -31,8 +31,8 @@ fi
 
 # Loop through the pairs of local and HDFS directories
 # for local_directory in "${!directories[@]}"; do
-local_directory=/home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl
-hdfs_directory=/user/anhcu/datalake/ohlcs
+local_directory=/home/ngocthang/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl
+hdfs_directory=/user/ngocthang/datalake/ohlcs
 # hdfs_directory="${directories[$local_directory]}"
 
 # Find the latest Parquet file
@@ -50,8 +50,8 @@ else
 fi
 # done
 
-local_directory=/home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl
-hdfs_directory=/user/anhcu/datalake/news
+local_directory=/home/ngocthang/Project/Stock_project/elt/data/completed/load_api_news_to_dl
+hdfs_directory=/user/ngocthang/datalake/news
 # hdfs_directory="${directories[$local_directory]}"
 
 # Find the latest Parquet file
