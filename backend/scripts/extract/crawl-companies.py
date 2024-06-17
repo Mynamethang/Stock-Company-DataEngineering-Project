@@ -21,7 +21,7 @@ for exchange in exchanges:
 
 # Get the current date for filename
 date = datetime.date.today().strftime("%Y_%m_%d")
-path = f"/home/anhcu/Project/Stock_project/backend/data/raw/companies/crawl_companies_{date}.json"
+path = f"/home/ngocthang/Project/Stock_project/backend/data/raw/companies/crawl_companies_{date}.json"
 
 # Serialize the list of companies to JSON
 json_object = json.dumps(list_companies, indent=4)
