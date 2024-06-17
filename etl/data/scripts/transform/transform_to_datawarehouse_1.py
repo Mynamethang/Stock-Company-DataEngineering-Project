@@ -20,7 +20,7 @@ def process(parquet_file_path):
     df_pandas = df_spark.toPandas()
 
     # Path to DuckDB database file
-    database_path = '/home/anhcu/Project/Stock_project/datawarehouse.duckdb'
+    database_path = '/home/ngocthang/Project/Stock_project/datawarehouse.duckdb'
 
     # Connect to DuckDB
     conn = duckdb.connect(database=database_path)
