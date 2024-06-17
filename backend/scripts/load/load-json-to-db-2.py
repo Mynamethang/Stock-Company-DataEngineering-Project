@@ -61,7 +61,7 @@ def insert_data_from_json(file_path, table_name, columns, conflict_columns):
 
 if __name__ == "__main__":
     # Define directory and table information
-    directory = '/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_exchanges'
+    directory = '/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_exchanges'
     table_name = 'exchanges'
     columns = ['exchange_region_id', 'exchange_name']
     conflict_columns = ['exchange_name']
