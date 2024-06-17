@@ -39,7 +39,7 @@ def process(parquet_file_path):
     print(f"Yesterday's date: {yesterday}")
     
     # Connect to DuckDB
-    database_path = '/home/anhcu/Project/Stock_project/datawarehouse.duckdb'
+    database_path = '/home/ngocthang/Project/Stock_project/datawarehouse.duckdb'
     conn = duckdb.connect(database=database_path)
     
     # Insert new time data into dim_time if it does not exist
