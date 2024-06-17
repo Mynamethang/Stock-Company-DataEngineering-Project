@@ -59,7 +59,7 @@ def save_to_json(dataframe, filename):
 
 if __name__ == "__main__":
     # Read latest markets data
-    markets = read_latest_file_in_directory('/home/anhcu/Project/Stock_project/backend/data/raw/markets')
+    markets = read_latest_file_in_directory('/home/ngocthang/Project/Stock_project/backend/data/raw/markets')
     
     # Get the current date for filenames
     date = datetime.date.today().strftime("%Y_%m_%d")
@@ -109,5 +109,5 @@ if __name__ == "__main__":
     exchanges.rename(columns=new_columns, inplace=True)
 
     # Save transformed exchanges data to JSON
-    path = f"/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_exchanges/process_exchanges_{date}.json"
+    path = f"/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_exchanges/process_exchanges_{date}.json"
     save_to_json(exchanges, path)
