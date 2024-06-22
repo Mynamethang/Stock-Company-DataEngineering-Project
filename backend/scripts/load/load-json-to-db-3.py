@@ -61,7 +61,7 @@ def insert_data_from_json(file_path, table_name, columns, conflict_columns):
 
 if __name__ == "__main__":
     # Define the directory and file extension
-    directory = '/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_companies'
+    directory = '/home/ngocthang/Project/Stock_project/backend/data/processed/transformed_to_database_companies'
     extension = '.json'
 
     # Get the latest file in the directory
