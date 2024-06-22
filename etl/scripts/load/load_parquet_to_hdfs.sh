@@ -2,9 +2,9 @@
 
 # Array of local directories and corresponding HDFS directories
 # declare -A directories=(
-#     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl"]="/user/anhcu/datalake/ohlcs"
-#     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_db_to_dl"]="/user/anhcu/datalake/companies"
-#     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl"]="/user/anhcu/datalake/news"
+#     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl"]="/ngocthang/anhcu/datalake/ohlcs"
+#     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_db_to_dl"]="/user/ngocthang/datalake/companies"
+#     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl"]="/user/ngocthang/datalake/news"
 # )
 
 # Variable to store the latest file names
