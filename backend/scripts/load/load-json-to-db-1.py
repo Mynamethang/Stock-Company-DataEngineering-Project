@@ -45,7 +45,7 @@ def insert_data_from_json(file_path, table_name, columns, conflict_columns):
     conn = psycopg2.connect(
         host="localhost",
         database="datasource",
-        user="anhcu",
+        user="ngocthang",
         password="admin"
     )
     cur = conn.cursor()
