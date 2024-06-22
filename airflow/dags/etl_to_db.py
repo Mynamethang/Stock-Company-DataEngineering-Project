@@ -27,49 +27,49 @@ with DAG(
     # Task 1: Crawl companies
     crawl_companies = BashOperator(
         task_id='crawl_companies',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/extract/crawl_companies.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/extract/crawl_companies.py',
     )
 
     # Task 2: Crawl markets
     crawl_markets = BashOperator(
         task_id='crawl_markets',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/extract/crawl_markets.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/extract/crawl_markets.py',
     )
 
     # Task 3: Transform to database 1
     transform_to_database_1 = BashOperator(
         task_id='transform_to_database_1',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/transform/transform_to_database_1.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/transform/transform_to_database_1.py',
     )
 
     # Task 4: Load JSON to DB 1
     load_json_to_db_1 = BashOperator(
         task_id='load_json_to_db_1',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/load/load_json_to_db_1.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/load/load_json_to_db_1.py',
     )
 
     # Task 5: Transform to database 2
     transform_to_database_2 = BashOperator(
         task_id='transform_to_database_2',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/transform/transform_to_database_2.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/transform/transform_to_database_2.py',
     )
 
     # Task 6: Load JSON to DB 2
     load_json_to_db_2 = BashOperator(
         task_id='load_json_to_db_2',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/load/load_json_to_db_2.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/load/load_json_to_db_2.py',
     )
 
     # Task 7: Transform to database 3
     transform_to_database_3 = BashOperator(
         task_id='transform_to_database_3',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/transform/transform_to_database_3.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/transform/transform_to_database_3.py',
     )
 
     # Task 8: Load JSON to DB 3
     load_json_to_db_3 = BashOperator(
         task_id='load_json_to_db_3',
-        bash_command='/bin/python3 /home/thang/Project/Stock_project/backend/scripts/load/load_json_to_db_3.py',
+        bash_command='/bin/python3 /home/ngocthang/Project/Stock_project/backend/scripts/load/load_json_to_db_3.py',
     )
 
     # Định nghĩa thứ tự chạy các task
