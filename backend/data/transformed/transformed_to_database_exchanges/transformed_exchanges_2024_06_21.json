@@ -1,0 +1,26 @@
+{"region":"United States","exchange_name":"NASDAQ"}
+{"region":"United States","exchange_name":"NYSE"}
+{"region":"United States","exchange_name":"AMEX"}
+{"region":"United States","exchange_name":"BATS"}
+{"region":"Canada","exchange_name":"Toronto"}
+{"region":"Canada","exchange_name":"Toronto Ventures"}
+{"region":"United Kingdom","exchange_name":"London"}
+{"region":"Germany","exchange_name":"XETRA"}
+{"region":"Germany","exchange_name":"Berlin"}
+{"region":"Germany","exchange_name":"Frankfurt"}
+{"region":"Germany","exchange_name":"Munich"}
+{"region":"Germany","exchange_name":"Stuttgart"}
+{"region":"France","exchange_name":"Paris"}
+{"region":"Spain","exchange_name":"Barcelona"}
+{"region":"Spain","exchange_name":"Madrid"}
+{"region":"Portugal","exchange_name":"Lisbon"}
+{"region":"Japan","exchange_name":"Tokyo"}
+{"region":"India","exchange_name":"NSE"}
+{"region":"India","exchange_name":"BSE"}
+{"region":"Mainland China","exchange_name":"Shanghai"}
+{"region":"Mainland China","exchange_name":"Shenzhen"}
+{"region":"Hong Kong","exchange_name":"Hong Kong"}
+{"region":"Brazil","exchange_name":"Sao Paolo"}
+{"region":"Mexico","exchange_name":"Mexico"}
+{"region":"South Africa","exchange_name":"Johannesburg"}
+{"region":"Global","exchange_name":"Global"}

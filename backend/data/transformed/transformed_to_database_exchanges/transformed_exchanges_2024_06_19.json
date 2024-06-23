@@ -1,0 +1,26 @@
+{"region":"United States","primary_exchanges":"NASDAQ"}
+{"region":"United States","primary_exchanges":"NYSE"}
+{"region":"United States","primary_exchanges":"AMEX"}
+{"region":"United States","primary_exchanges":"BATS"}
+{"region":"Canada","primary_exchanges":"Toronto"}
+{"region":"Canada","primary_exchanges":"Toronto Ventures"}
+{"region":"United Kingdom","primary_exchanges":"London"}
+{"region":"Germany","primary_exchanges":"XETRA"}
+{"region":"Germany","primary_exchanges":"Berlin"}
+{"region":"Germany","primary_exchanges":"Frankfurt"}
+{"region":"Germany","primary_exchanges":"Munich"}
+{"region":"Germany","primary_exchanges":"Stuttgart"}
+{"region":"France","primary_exchanges":"Paris"}
+{"region":"Spain","primary_exchanges":"Barcelona"}
+{"region":"Spain","primary_exchanges":"Madrid"}
+{"region":"Portugal","primary_exchanges":"Lisbon"}
+{"region":"Japan","primary_exchanges":"Tokyo"}
+{"region":"India","primary_exchanges":"NSE"}
+{"region":"India","primary_exchanges":"BSE"}
+{"region":"Mainland China","primary_exchanges":"Shanghai"}
+{"region":"Mainland China","primary_exchanges":"Shenzhen"}
+{"region":"Hong Kong","primary_exchanges":"Hong Kong"}
+{"region":"Brazil","primary_exchanges":"Sao Paolo"}
+{"region":"Mexico","primary_exchanges":"Mexico"}
+{"region":"South Africa","primary_exchanges":"Johannesburg"}
+{"region":"Global","primary_exchanges":"Global"}
