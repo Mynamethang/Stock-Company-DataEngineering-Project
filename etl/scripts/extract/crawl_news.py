@@ -53,7 +53,7 @@ json_object = json.dumps(json_object, indent=4)
 date = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y_%m_%d")
 
 # Define the file path for saving the JSON data
-path = r"/home/ngocthang/Project/Stock_project/elt/data/raw/news/crawl_news_" + f"{date}.json"
+path = r"/home/ngocthang/Documents/Code/Stock-Company-Analysis/elt/data/raw/news/crawl_news_" + f"{date}.json"
 
 # Write the JSON data to a file
 with open(path, "w") as outfile:
