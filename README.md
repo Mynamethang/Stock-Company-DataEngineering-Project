@@ -10,6 +10,7 @@
 - **_Integrate the automation workflow in this project to trigger tasks in right time_**
 - **_Create dashboard model for analytics purpose__**
 
+
 ## 2 Project Architect
 
 <img src="img\Project Architect.png" alt="ETL">  
