@@ -54,14 +54,14 @@ def load_db_to_dl(input_directory, output_directory):
 
 # Convert News JSON files to Parquet
 # Path to the directory containing the JSON files
-input_directory = r'/home/ngocthang/Project/Stock_project/elt/data/raw/news'
+input_directory = r'/home/ngocthang/Documents/Code/Stock-Company-Analysis/elt/data/raw/news'
 # Path to the directory to save the Parquet files
-output_directory = r'/home/ngocthang/Project/Stock_project/elt/data/completed/load_api_news_to_dl'
+output_directory = r'/home/ngocthang/Documents/Code/Stock-Company-Analysis/elt/data/completed/load_api_news_to_dl'
 load_db_to_dl(input_directory, output_directory)
 
 # Convert OHLCs JSON files to Parquet
 # Path to the directory containing the JSON files
-input_directory = r'/home/ngocthang/Project/Stock_project/elt/data/raw/ohlcs'
+input_directory = r'/home/ngocthang/Documents/Code/Stock-Company-Analysis/elt/data/raw/ohlcs'
 # Path to the directory to save the Parquet files
-output_directory = r'/home/ngocthang/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl'
+output_directory = r'/home/ngocthang/Documents/Code/Stock-Company-Analysis/elt/data/completed/load_api_ohlcs_to_dl'
 load_db_to_dl(input_directory, output_directory)
