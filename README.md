@@ -1,8 +1,8 @@
 <h1>Introducing My Data Engieering Project</h1>
 
-<h2>Over View</h2>
+# Over View
 
-# 1 Steps
+## 1 Steps
 
 - **_In this project I deploy an ETL process and initialize suitable storage. After all, I will create informative dashboard on BI system for stock data._** 
 - **_The data in this project is extracted from data source of the US stock market._**
@@ -10,7 +10,7 @@
 - **_Integrate the automation workflow in this project to trigger tasks in right time_**
 - **_Create dashboard model for analytics purpose__**
 
-# 2 Project Architect
+## 2 Project Architect
 
 <img src="img\Project Architect.png" alt="ETL">  
 
