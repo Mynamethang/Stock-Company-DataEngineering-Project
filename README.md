@@ -21,6 +21,7 @@
 ## 3 Dashboards
 https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
 
+# Detail
 - [A. Data Source And Design](#a-data-source-and-design)
   - [I. API Detail](#i-api-detail)
     - [1. Alpha Vantage API for market-status](#1-alpha-vantage-api-for-market-status)
