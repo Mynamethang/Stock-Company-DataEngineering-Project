@@ -18,6 +18,8 @@
 
 <h1>Detail of the Project</h1>
 
+## 3 Dashboards
+https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
 
 - [A. Data Source And Design](#a-data-source-and-design)
   - [I. API Detail](#i-api-detail)
