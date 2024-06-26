@@ -266,12 +266,12 @@ Ta sẽ phân tích và ước tính lượng dữ liệu dựa trên 4Vs của 
 - Cấu trúc CSDL của data staging được extract vào trước khi xử lý data để đưa vào Data Warehouse
 <img src="img\ERD.png" alt="ERD">
 
-## V. Star Schema
+## V. Galaxy Schema
 - Business Requirement #1
     Tạo Data Mart từ CSDL để theo dõi giá bán cũng như khối lượng cổ phiểu được giao dịch sau mỗi ngày giao dịch. 
 - Business Requirement #2
     Tạo Data Mart từ CSDL để theo dõi các chuyên gia nói gì về từng cổ phiếu sau mỗi ngày giao dịch. 
 
-<img src="img\starschema.png" alt="starschema">
+<img src="img\Galaxy Schema" alt="starschema">
 
 
