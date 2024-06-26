@@ -8,7 +8,7 @@
 - **_The data in this project is extracted from data source of the US stock market._**
 - **_I use various of tools including big data tools to perform complex tasks_**
 - **_Integrate the automation workflow in this project to trigger tasks in right time_**
-- **_Create dashboard model for analytics purpose__**
+- **_Create dashboard model for analytics purpose_**
 
 
 ## 2 Project Architect
