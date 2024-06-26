@@ -18,7 +18,7 @@
 
 ## 4 Data warehouse
 
- <img src="img\Galaxy Schema" alt="Schema">
+ <img src="img\Galaxy Schema.png" alt="Schema">
 
 ## 3 Dashboards
 https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
