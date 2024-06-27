@@ -1,3 +1,4 @@
+
 -- Tạo SEQUENCE cho các bảng
 CREATE SEQUENCE company_id_seq;
 CREATE SEQUENCE topic_id_seq;
