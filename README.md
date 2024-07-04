@@ -21,6 +21,21 @@
  <img src="img\Galaxy Schema.png" alt="Schema">
 
 ## 4 Dashboards
+ <img src="dashboards\dashboard1.png" alt="Schema">
+
+ <img src="dashboards\dashboard2.png" alt="Schema">
+
+ <img src="dashboards\dashboard3.png" alt="Schema">
+
+ <img src="dashboards\dashboard4.png" alt="Schema">
+
+ <img src="dashboards\dashboard5.png" alt="Schema">
+
+ <img src="dashboards\dashboard6.png" alt="Schema">
+
+ <img src="dashboards\dashboard7.png" alt="Schema">
+
+ _link doashboards documents_
 https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
 
 
