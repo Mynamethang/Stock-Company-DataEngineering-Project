@@ -18,7 +18,7 @@
 
 ## 3 Data warehouse
 
- <img src="img\Galaxy Schema.png" alt="Schema">
+ <img src="img\Galaxy Schema.png" alt="Schema" width="500" height="300">
 
 ## 4 Dashboards
 
