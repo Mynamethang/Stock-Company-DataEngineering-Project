@@ -22,15 +22,24 @@
 
 ## 4 Dashboards
 
-<img src="dashboards/dashboard1.png" alt="Dashboard 1" width="300" height="200">
-<img src="dashboards/dashboard2.png" alt="Dashboard 2" width="300" height="200">
-<img src="dashboards/dashboard3.png" alt="Dashboard 3" width="300" height="200">
+## 4 Dashboards
 
-<img src="dashboards/dashboard4.png" alt="Dashboard 4" width="300" height="200">
-<img src="dashboards/dashboard5.png" alt="Dashboard 5" width="300" height="200">
-<img src="dashboards/dashboard6.png" alt="Dashboard 6" width="300" height="200">
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <img src="dashboards/dashboard1.png" alt="Dashboard 1" width="300" height="200">
+    <img src="dashboards/dashboard2.png" alt="Dashboard 2" width="300" height="200">
+    <img src="dashboards/dashboard3.png" alt="Dashboard 3" width="300" height="200">
+</div>
 
-<img src="dashboards/dashboard7.png" alt="Dashboard 7" width="300" height="200">
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <img src="dashboards/dashboard4.png" alt="Dashboard 4" width="300" height="200">
+    <img src="dashboards/dashboard5.png" alt="Dashboard 5" width="300" height="200">
+    <img src="dashboards/dashboard6.png" alt="Dashboard 6" width="300" height="200">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <img src="dashboards/dashboard7.png" alt="Dashboard 7" width="300" height="200">
+</div>
+
 
  _link doashboards documents_
 https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
