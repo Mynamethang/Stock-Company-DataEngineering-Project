@@ -21,9 +21,9 @@
  <img src="img\Galaxy Schema.png" alt="Schema">
 
 ## 4 Dashboards
- <img src="dashboards\dashboard1.png" alt="Schema"  width="400" height="300">
+ <img src="dashboards\dashboard1.png" alt="Schema"  width="400" height="400"> <img src="dashboards\dashboard2.png" alt="Schema" width="400" height="400">
 
- <img src="dashboards\dashboard2.png" alt="Schema">
+ 
 
  <img src="dashboards\dashboard3.png" alt="Schema">
 
