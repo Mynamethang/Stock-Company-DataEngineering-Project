@@ -87,19 +87,22 @@ def get_fact_news_topics():
 def get_fact_candles():
     candles_time_id = request.args.get('candles_time_id')
     
-    if not candles_time_id:
-        return jsonify({'error': 'candles_time_id parameter is required'}), 400
+    if candles_time_id:
+        try:
+            candles_time_id = int(candles_time_id)
+            query = 'SELECT * FROM fact_candles WHERE candles_time_id = ?;'
+            params = (candles_time_id,)
+        except ValueError:
+            return jsonify({'error': 'candles_time_id parameter must be an integer'}), 400
+    else:
+        query = 'SELECT * FROM fact_candles;'
+        params = ()
 
-    try:
-        candles_time_id = int(candles_time_id)
-    except ValueError:
-        return jsonify({'error': 'candles_time_id parameter must be an integer'}), 400
-
-    query = 'SELECT * FROM fact_candles WHERE candles_time_id = ?;'
-    data = execute_query(query, (candles_time_id,))
+    data = execute_query(query, params)
     if data is None:
         return jsonify({'error': 'Error retrieving data'}), 500
     return jsonify(data)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
