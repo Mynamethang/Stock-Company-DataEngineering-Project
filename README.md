@@ -22,8 +22,6 @@
 
 ## 4 Dashboards
 
-## 4 Dashboards
-
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
     <img src="dashboards/dashboard1.png" alt="Dashboard 1" width="300" height="200">
     <img src="dashboards/dashboard2.png" alt="Dashboard 2" width="300" height="200">
