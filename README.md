@@ -16,11 +16,11 @@
 <img src="img\Project Architect.png" alt="Processing Pipeline">  
 
 
-# 3 Data warehouse
+# 3 Data warehouse  🏭
 
  <img src="img\Galaxy Schema.png" alt="Schema" width="600" height="500">
 
-# 4 Dashboards
+# 4 Dashboards 📊
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
     <img src="dashboards/dashboard1.png" alt="Dashboard 1" width="300" height="200">
@@ -42,6 +42,6 @@
  _link doashboards documents_
 https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
 
-
+<h1>Design</h1>
 
 
