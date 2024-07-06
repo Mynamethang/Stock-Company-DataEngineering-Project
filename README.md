@@ -11,9 +11,9 @@
 - **_Create dashboard model for analytics purpose_**
 
 
-## 2 Project Architect
+## 2 Processing Pipeline
 
-<img src="img\Project Architect.png" alt="Architect">  
+<img src="img\Project Architect.png" alt="Processing Pipeline">  
 
 
 ## 3 Data warehouse
