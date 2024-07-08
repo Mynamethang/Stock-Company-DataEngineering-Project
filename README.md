@@ -53,7 +53,7 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
 
 2. **Query & Check If data is inserted to Data Warehouse correctly**:
  ```Bash
- /home/ngocthang/Documents/code/Airflow-ven/airflow_venv/bin/python /home/ngocthang/Documents/code/Stoct-Project/SQL/config_dw/config_dw.py
+ /home/ngocthang/Documents/code/Airflow-ven/airflow_venv/bin/python /home/ngocthang/Documents/code/Stoct-Project/SQL/config-datawarehouse/config.py
  ```
 
 4. 
