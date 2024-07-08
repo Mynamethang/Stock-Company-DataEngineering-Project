@@ -43,6 +43,19 @@
  _link doashboards documents_
 https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive_link
 
-<h1>Design</h1>
+<h1>Implement</h1>
+1. **Run Aiflow**:
+
+ ```Bash
+ airflow scheduler
+ airflow webserver --port 8080
+ ```
+
+2. **Query & Check If data is inserted to Data Warehouse correctly**:
+ ```Bash
+ /home/ngocthang/Documents/code/Airflow-ven/airflow_venv/bin/python /home/ngocthang/Documents/code/Stoct-Project/SQL/config_dw/config_dw.py
+ ```
+
+4. 
 
 
