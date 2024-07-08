@@ -67,7 +67,8 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
 ![Screenshot 2024-07-05 153410](https://github.com/Mynamethang/Stock-Company-DataEngineering-Project/assets/109019819/e8f1171d-4814-40a2-9e3d-f31ab04eadd1)
 
 4. **Extract data from the data warehouse API**
-   
+   a. Access directory: <span style="color: red;">data-for-dashboards/request</span>
+   b Run the file : <span style="color: red;">request-data.py</span>
 
 
 
