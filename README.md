@@ -2,7 +2,7 @@
 
 <h1>Overview</h1>
 
-# 1 Process
+**1 Process**
 
 - **_In this project I deploy an ETL process, initialize suitable storage and BI system for data of stock._** 
 - **_The data in this project is extracted from data source of the US stock market._**
@@ -11,17 +11,17 @@
 - **_Create dashboard model for analytics purpose_**
 
 
-# 2 Processing Pipeline
+**2 Processing Pipeline**
 ## _Tools that I used to deploy the data pipeline and storage_
 
 <img src="img\Project Architect.png" alt="Processing Pipeline">  
 
 
-# 3 Data warehouse  🏭
+**Data warehouse  🏭**
 
  <img src="img\Galaxy Schema.png" alt="Schema" width="600" height="500">
 
-# 4 Dashboards 📊
+**4 Dashboards 📊**
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
     <img src="dashboards/dashboard1.png" alt="Dashboard 1" width="300" height="200">
