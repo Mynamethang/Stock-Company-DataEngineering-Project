@@ -12,7 +12,7 @@
 
 
 **2 Processing Pipeline**
-## _Tools that I used to deploy the data pipeline and storage_
+  Tools that I used to deploy the data pipeline and storage
 
 <img src="img\Project Architect.png" alt="Processing Pipeline">  
 
