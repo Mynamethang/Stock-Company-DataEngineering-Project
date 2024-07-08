@@ -51,6 +51,8 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
  airflow scheduler
  airflow webserver --port 8080
  ```
+![Screenshot 2024-07-05 143945](https://github.com/Mynamethang/Stock-Company-DataEngineering-Project/assets/109019819/97c162df-6a6f-42ec-8d0d-2a0425f67637)
+
 
 2. **Query & Check If data is inserted to Data Warehouse correctly**:
  ```Bash
@@ -58,6 +60,15 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
  ```
 ![image](https://github.com/Mynamethang/Stock-Company-DataEngineering-Project/assets/109019819/a562615d-511a-417c-9274-2d4fa2738d97)
 
-4. 
+3. **Run API Application in Local Machine**
+ ```Bash
+ python /home/ngocthang/Documents/code/Stoct-Project/api-datawarehouse.py
+ ```
+![Screenshot 2024-07-05 153410](https://github.com/Mynamethang/Stock-Company-DataEngineering-Project/assets/109019819/e8f1171d-4814-40a2-9e3d-f31ab04eadd1)
+
+4. **Request data from the data warehouse API**
+   
+
+
 
 
