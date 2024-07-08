@@ -55,6 +55,7 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
  ```Bash
  /home/ngocthang/Documents/code/Airflow-ven/airflow_venv/bin/python /home/ngocthang/Documents/code/Stoct-Project/SQL/config-datawarehouse/config.py
  ```
+![image](https://github.com/Mynamethang/Stock-Company-DataEngineering-Project/assets/109019819/a562615d-511a-417c-9274-2d4fa2738d97)
 
 4. 
 
