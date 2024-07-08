@@ -68,8 +68,8 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
 
 4. **Extract data from the data warehouse API** :
    
-   a. _Access directory_ : <span style="color: red;">data-for-dashboards/request</span>
-   b. _Run the file_ : <span style="color: red;">request-data.py</span>
+   a. _Access directory_ : <span style="color: red;">data-for-dashboards/request</span>.
+   b. _Run the file_ : <span style="color: red;">request-data.py</span>.
 
 
 
