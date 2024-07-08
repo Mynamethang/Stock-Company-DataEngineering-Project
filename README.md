@@ -69,10 +69,13 @@ https://drive.google.com/file/d/1jW4DsNfhnjfpGlTw9MevLFmh5RhHWkMV/view?usp=drive
 4. **Extract data from the data warehouse API** :
    
    a. Access directory : data-for-dashboards/request.
+   
    b. Run the file : request-data.py.
+   
    c. Check folder data-for-dashboards/datasets to see if the data is inserted correctly or not.
+   
 
-5. **Drive the data to Power BI to create insightful dashboards**
+6. **Drive the data to Power BI to create insightful dashboards**
    
    ![image](https://github.com/Mynamethang/Stock-Company-DataEngineering-Project/assets/109019819/de91461b-1cd8-4ff7-b3a1-0736619d626c)
 
