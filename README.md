@@ -17,7 +17,7 @@
 <img src="img\Project Architect.png" alt="Processing Pipeline">  
 
 
-**Data warehouse  🏭**
+**3 Data warehouse  🏭**
 
  <img src="img\Galaxy Schema.png" alt="Schema" width="600" height="500">
 
