@@ -24,12 +24,12 @@
 **4 Dashboards 📊**
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-    <img src="dashboards/dashboard1.png" alt="Dashboard 1" width="400" height="200">
-    <img src="dashboards/dashboard2.png" alt="Dashboard 2" width="400" height="200">
-    <img src="dashboards/dashboard3.png" alt="Dashboard 3" width="400" height="200">
-    <img src="dashboards/dashboard4.png" alt="Dashboard 4" width="400" height="200">
-    <img src="dashboards/dashboard5.png" alt="Dashboard 5" width="400" height="200">
-    <img src="dashboards/dashboard6.png" alt="Dashboard 6" width="400" height="200">
+    <img src="dashboards/dashboard1.png" alt="Dashboard 1" width="400" height="250">
+    <img src="dashboards/dashboard2.png" alt="Dashboard 2" width="400" height="250">
+    <img src="dashboards/dashboard3.png" alt="Dashboard 3" width="400" height="250">
+    <img src="dashboards/dashboard4.png" alt="Dashboard 4" width="400" height="250">
+    <img src="dashboards/dashboard5.png" alt="Dashboard 5" width="400" height="250">
+    <img src="dashboards/dashboard6.png" alt="Dashboard 6" width="400" height="250">
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
